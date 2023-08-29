@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <div className='flex flex-row w-full justify-between'>
         <div>
-          <div className='xs:invisible md:invisible sm:invisible xl:h-20 lg:h-20'></div>
+          <div className={`${styles.visible}  xl:h-20 lg:h-20`}></div>
           <h1 className={`${styles.heroHeadText}`}>Hello&nbsp;there,&nbsp;I'm<br/>
             <span className="text-violet-500">&nbsp;Arnob Dey!</span>
           </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
           <div className='md:20 xl:20 lg:h-20'></div>
         </div>
       <div className={`${styles.visible}`}></div>
-      <div className={`ml-4 w-full pl-4 px-4 ${styles.visible} `}>
+      <div className={`ml-4 w-full pl-4 px-4 hidden md:visible xl:visible lg:visible `}>
         <ThreeObject/>
       </div>
       </div>
