@@ -6,7 +6,7 @@ import {logo, menu, close} from '../assets';
 
 const Navbar = () => {
     const [active, setActive] = useState("");
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
 
   return (
     <nav className={`
@@ -21,7 +21,7 @@ const Navbar = () => {
       >
         <img src={logo} alt="logo" className="w-9 h-9 object-contain"/>
         <p className="text-white flex font-bold text-base sm:text-sm cursos-pointer">Arnob &nbsp;&nbsp;
-        <span className="sm:block hidden"> |&nbsp;&nbsp;&nbsp;Personal Portfolio</span></p>
+        <span className={`${styles.visible} `}> |&nbsp;&nbsp;&nbsp;Personal Portfolio</span></p>
       </Link>
       <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (

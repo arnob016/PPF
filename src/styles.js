@@ -2,7 +2,8 @@ const styles = {
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-16 py-10",
-  
+    visible: "xs:invisible md:invisible sm:invisible xl:visible lg:visible 2xl:visible 3xl:visible 7xl:visible",
+    invisible: "xs:visible md:visible sm:visible xl:invisible lg:invisible 2xl:invisible 3xl:invisible 7xl:invisible",
     heroHeadText:
       "font-black text-white lg:text-[60px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2",
     heroSubText:
