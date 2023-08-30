@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import { ThreeObject } from './canvas';
-import Haxfect from './HaxFect';
+import HexFect from './HexFect';
 
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-violet-500">&nbsp;Arnob Dey!</span>
           </h1>
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <Haxfect textToAnimate={heroText} />
+            <HexFect textToAnimate={heroText} />
           </div>
 
           <div className='md:20 xl:20 lg:h-20'></div>
