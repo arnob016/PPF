@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       
       <div className={`${styles.visible}`}></div>
-      <div className={`ml-4 w-full pl-4 px-4 ${styles.visible}`}>
+      <div className={`ml-4 w-full pl-4 px-4 overflow-hidden ${styles.visible}`}>
         <ThreeObject/>
         </div>
   </div>
