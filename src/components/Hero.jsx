@@ -14,7 +14,7 @@ const Hero = () => {
       <div className='flex flex-row w-full justify-between'>
         <div>
           <div className={`${styles.visible}  xl:h-20 lg:h-20`}></div>
-          <h1 className={`${styles.heroHeadText}`}>Hello&nbsp;there,&nbsp;I'm<br/>
+          <h1 className={`${styles.heroHeadText}`}>Hello&nbsp;there,&nbsp;I&#39;m<br/>
             <span className="text-violet-500">&nbsp;Arnob Dey!</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> Welcome to my portfolio!</p>
