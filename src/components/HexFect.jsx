@@ -5,7 +5,7 @@ const HexFect = ({ textToAnimate }) => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const [animatedText, setAnimatedText] = useState('');
   const intervalRef = useRef(null);
-
+  const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
     clearInterval(intervalRef.current);
 
@@ -34,9 +34,16 @@ const HexFect = ({ textToAnimate }) => {
     return () => {
       clearInterval(intervalRef.current);
     };
-  }, [textToAnimate]);
+  }, [textToAnimate,isHovered]);
 
-  return <span>{animatedText}</span>;
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  }
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  }
+
+  return <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{animatedText}</div>;
 };
 
 HexFect.propTypes = {
