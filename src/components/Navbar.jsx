@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className={`
     ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#00365c]`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
       <Link to="/"
       className="flex items-center gap-2"
       onClick={() => {
@@ -19,11 +19,11 @@ const Navbar = () => {
         window.scrollTo(0, 0);
       }}
       >
-        <img src={logo} alt="logo" className="w-9 h-9 object-contain"/>
-        <p className="text-white flex font-bold text-base sm:text-sm cursos-pointer">Arnob &nbsp;&nbsp;
+        <img src={logo} alt="logo" className="object-contain w-9 h-9"/>
+        <p className="flex text-base font-bold text-white sm:text-sm cursos-pointer">Arnob &nbsp;&nbsp;
         <span className={`${styles.visible} `}> |&nbsp;&nbsp;&nbsp;Personal Portfolio</span></p>
       </Link>
-      <ul className='list-none hidden sm:flex flex-row gap-10'>
+      <ul className='flex-row hidden gap-10 list-none sm:flex'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -37,12 +37,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center ">
-          <img src={toggle ? menu : close} alt="menu" className="w-7 h-7 object-contain cursor-pointer"
+        <div className="flex items-center justify-end flex-1 sm:hidden ">
+          <img src={toggle ? menu : close} alt="menu" className="object-contain cursor-pointer w-7 h-7"
           onClick={() => setToggle(!toggle)}/>
           <div className={`${toggle ? "hidden" : "flex"}
            p-6 black-gradient absolute rounded-lg top-20 right-0 mx-4 my-2 min-w-[140px] z-10` }>
-              <ul className='list-none flex justify-end flex-col gap-4 items-start'>
+              <ul className='flex flex-col items-start justify-end gap-4 list-none'>
                 {navLinks.map((nav) => (
 
               <li
