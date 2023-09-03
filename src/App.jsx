@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from "./components";
+import RepoInfo from "./components/RepoInfo";
 
 const App = () => {
 
@@ -10,8 +11,7 @@ const App = () => {
           <Navbar />
           <Hero />
           <About />
-
-        
+          <RepoInfo />
         <Experience />
         <Tech />
         <Works />
