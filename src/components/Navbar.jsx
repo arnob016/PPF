@@ -9,8 +9,9 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(true);
 
   return (
-    <nav className={`
-    ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#00365c]`}>
+    <div className='flex justify-center'>
+      <nav className={`
+    ${styles.paddingX}   rounded-3xl w-5/6 flex items-center py-5 fixed top-5 z-20 bg-gradient-to-r from-[#231436] via-[#061839] to-[#3d1437]`}>
       <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
       <Link to="/"
       className="flex items-center gap-2"
@@ -63,6 +64,7 @@ const Navbar = () => {
       </div>    
       </div>
     </nav>
+    </div>
   )
 }
 
