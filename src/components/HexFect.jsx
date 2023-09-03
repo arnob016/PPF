@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 const HexFect = ({ textToAnimate }) => {
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const letters = "BCDEFGHIJKLMNOPQRSTUVW";
   const [animatedText, setAnimatedText] = useState('');
   const intervalRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);

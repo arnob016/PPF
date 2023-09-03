@@ -5,11 +5,11 @@ import HexFect from './HexFect';
 
 
 const Hero = () => {
-  const heroText = "WELCOME TO MY PORTFOLIO !!!";
+  const heroText = "WELCOME TO MY PORTFOLIO !";
 
   return (
     <section className='relative w-full h-screen max-auto'>
-      <div className={`absolute inset-0 top-[120px] max-w-full h-auto mx-auto sm:px-16 pl-6 flex flex-row items-start gap-5`}>
+      <div className={`absolute inset-0 top-[150px] md:top-[220px] max-w-full h-auto mx-auto sm:px-16 pl-6 flex flex-row items-start gap-5`}>
         <div className='flex flex-col items-center justify-center mt-5'>
         <div className='w-5 h-5 rounded-full bg-violet-500'/>
         <div className='w-1 h-40 sm:h-80 violet-gradient'/>
