@@ -14,7 +14,7 @@ const Hero = () => {
         <div className='w-5 h-5 rounded-full bg-violet-500'/>
         <div className='w-1 h-40 sm:h-80 violet-gradient'/>
       </div>
-      <div className='flex flex-row justify-between w-full'>
+      <div className='flex flex-col justify-between w-full lg:flex-row'>
         <div className='w-full'>
           <div className={`${styles.visible}  xl:h-10 lg:h-10 `}></div>
           <h1 className={`${styles.heroHeadText}`}>Hello&nbsp;there,&nbsp;I&#39;m<br/>
@@ -28,6 +28,10 @@ const Hero = () => {
         </div>
       
       <div className={`ml-4 w-full pl-4 px-4 overflow-hidden ${styles.visible}`}>
+        <ThreeObject/>
+        </div>
+
+      <div className={`ml-4 mt-20 w-full pl-4 px-10 overflow-hidden ${styles.invisible}`}>
         <ThreeObject/>
         </div>
   </div>
