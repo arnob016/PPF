@@ -24,4 +24,7 @@ module.exports = {
     },
   },
   plugins: [],
+  headwind: {
+    runOnSave: true,
+  },
 };
