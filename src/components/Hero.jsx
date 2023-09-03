@@ -3,7 +3,6 @@ import {styles} from '../styles';
 import { ThreeObject } from './canvas';
 import HexFect from './HexFect';
 
-
 const Hero = () => {
   const heroText = "WELCOME TO MY PORTFOLIO !";
 

@@ -1,13 +1,30 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {styles} from '../styles';
+import { styles } from '../styles';
 import { navLinks } from '../constants';
-import {logo, menu, close} from '../assets';
+import { logo, menu, close } from '../assets';
+import RepoInfo from './RepoInfo';
 
 const Navbar = () => {
-    const [active, setActive] = useState("");
-    const [toggle, setToggle] = useState(true);
+  const [active, setActive] = useState('');
+  const [toggle, setToggle] = useState(true);
+  const [showRepoInfo, setShowRepoInfo] = useState(false);
 
+  useEffect(() => {
+    const showTimer = setTimeout(() => {
+      setShowRepoInfo(true);
+    }, 5000);
+
+    const hideTimer = setTimeout(() => {
+      setShowRepoInfo(false);
+    }, 10000);
+
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(hideTimer);
+    };
+  }, []);
+  
   return (
     <div className='flex justify-center'>
       <nav className={`
@@ -64,6 +81,15 @@ const Navbar = () => {
       </div>    
       </div>
     </nav>
+    <div className='fixed bottom-5 right-5 z-9999'>
+        <div
+          className={`${
+            showRepoInfo ? 'opacity-100 max-h-[100px] transition-opacity transition-max-h ease-in duration-500' : 'opacity-0 max-h-0 transition-opacity transition-max-h fade-out duration-500'
+          }`}
+        >
+          <RepoInfo />
+        </div>
+      </div>
     </div>
   )
 }
