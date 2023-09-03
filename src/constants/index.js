@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import {
     mobile,
     backend,
-    creator,
+    blockchain,
     web,
     javascript,
     typescript,
@@ -15,6 +16,7 @@ import {
     git,
     figma,
     docker,
+    research,
     meta,
     starbucks,
     tesla,
@@ -46,16 +48,16 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Researcher",
+      icon: research,
+    },
+    {
+      title: "Blockchain Developer",
+      icon: blockchain,
     },
   ];
   
