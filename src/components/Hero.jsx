@@ -9,12 +9,12 @@ const Hero = () => {
 
   return (
     <section className='relative w-full h-screen max-auto'>
-      <div className={`absolute inset-0 top-[150px] md:top-[220px] max-w-full h-auto mx-auto sm:px-16 pl-6 flex flex-row items-start gap-5`}>
+      <div className={`absolute inset-0 top-[150px] lg:top-[220px] max-w-full h-auto mx-auto sm:px-16 pl-6 flex flex-row items-start gap-5`}>
         <div className='flex flex-col items-center justify-center mt-5'>
         <div className='w-5 h-5 rounded-full bg-violet-500'/>
         <div className='w-1 h-40 sm:h-80 violet-gradient'/>
       </div>
-      <div className='flex flex-col justify-between w-full lg:flex-row'>
+      <div className='flex justify-between w-full overflow-hidden xs:flex-col sm:flex-col md:flex-col lg:flex-row'>
         <div className='w-full'>
           <div className={`${styles.visible}  xl:h-10 lg:h-10 `}></div>
           <h1 className={`${styles.heroHeadText}`}>Hello&nbsp;there,&nbsp;I&#39;m<br/>
