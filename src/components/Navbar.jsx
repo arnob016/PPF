@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
@@ -81,10 +82,10 @@ const Navbar = () => {
       </div>    
       </div>
     </nav>
-    <div className='fixed bottom-5 right-5 z-9999'>
+    <div className='fixed z-50 bottom-5 right-5'>
         <div
           className={`${
-            showRepoInfo ? 'opacity-100 max-h-[100px] transition-opacity transition-max-h ease-in duration-500' : 'opacity-0 max-h-0 transition-opacity transition-max-h fade-out duration-500'
+            showRepoInfo ? 'z-50 opacity-100 max-h-[100px] transition-opacity transition-max-h ease-in duration-500' : 'opacity-0 max-h-0 transition-opacity transition-max-h fade-out duration-500'
           }`}
         >
           <RepoInfo />

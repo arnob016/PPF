@@ -35,8 +35,8 @@ const RepoInfo = () => {
   }, []);
 
   return (
-    <div className="p-2 hover:px-10 m-2 overflow-hidden justify-center text-black font-extrabold flex rounded-md bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-300 via-green-400 to-rose-700">
-      <div className="flex"> Last updated by <div className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">&nbsp;{commitInfo.author}&nbsp;</div> on <div className="font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900">&nbsp;{commitInfo.date}&nbsp;</div></div>
+    <div className=" p-2 text-xs lg:text-md xl:text-lg hover:px-5 m-2 overflow-hidden justify-center text-black font-extrabold rounded-md bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-300 via-green-400 to-rose-700">
+      <div className="flex-none md:flex"> Last updated by <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">&nbsp;{commitInfo.author}&nbsp;</span> on <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900">&nbsp;{commitInfo.date}&nbsp;</span></div>
     </div>
   );
 };
