@@ -8,18 +8,17 @@ import { styles } from '../styles';
 import {experiences} from '../constants';
 import { SectionWrapper } from '../hoc';
 import {textVariant} from '../utils/motion';
-
 import 'react-vertical-timeline-component/style.min.css';
 
 const ExperienceCard = ({experience}) => (
     <VerticalTimelineElement
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    contentStyle={{ background: 'linear-gradient(to right bottom, rgb(251, 113, 133), rgb(217, 70, 239), rgb(99, 102, 241))', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '16px solid  rgb(251, 113, 133)' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div className='flex items-center justify-center w-full h-full'>
-        <img src={experience.icon} alt={experience.title} className='w-[60%] h-[60%] object-contain'/>
+        <img src={experience.icon} alt={experience.title} className='object-contain'/>
       </div>
     }
     >
@@ -37,7 +36,6 @@ const ExperienceCard = ({experience}) => (
         </ul> 
   </VerticalTimelineElement>
 );
-
 
 const Experience = () => {
   return (

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import LoadingScreen from "./components/LoadingScreen";
@@ -31,7 +32,7 @@ const App = () => {
         <LoadingScreen progress={loadingProgress} /> // Pass the loadingProgress as a prop
       ) : (
         <div className="relative z-0 bg-primary">
-          <div className="bg-center bg-no-repeat bg-cover bg-hero-pattern">
+          <div className="bg-center bg-no-repeat bg-cover bg-gradient-to-t from-[#231436] via-[#061839] to-[#3d1437]">
             <Navbar />
             <Hero />
             <About />
