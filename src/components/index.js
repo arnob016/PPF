@@ -8,6 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import RepoInfo from './RepoInfo';
+import LoadingScreen from './LoadingScreen';
 
 export {
   Hero,
@@ -22,5 +23,6 @@ export {
   BallCanvas, 
   ThreeObject, 
   StarsCanvas,
-  RepoInfo
+  RepoInfo,
+  LoadingScreen
 }
