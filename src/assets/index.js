@@ -1,3 +1,4 @@
+import loadbg from "./loadbg.jpg";
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import blockchain from "./blockchain.png";
@@ -23,15 +24,16 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import script3 from "./company/script3.png";
+import bandcoin from "./company/bandcoin.png";
+import action from "./company/action.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  loadbg,
   logo,
   backend,
   blockchain,
@@ -55,9 +57,9 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
+  script3,
+  bandcoin,
+  action,
   carrent,
   jobit,
   tripguide,
