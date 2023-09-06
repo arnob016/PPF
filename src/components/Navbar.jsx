@@ -29,10 +29,10 @@ const Navbar = () => {
   return (
     <div className='flex justify-center'>
       <nav className={`
-    ${styles.paddingX}   rounded-3xl w-5/6 flex items-center py-5 fixed top-5 z-20 bg-gradient-to-r from-[#231436] via-[#061839] to-[#3d1437]`}>
-      <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
+    ${styles.paddingX}   rounded-3xl w-5/6 flex items-center py-5 fixed top-5 z-20 bg-transparent`}>
+      <div className="flex items-center justify-between w-full mx-auto max-w-7xl ">
       <Link to="/"
-      className="flex items-center gap-2"
+      className="flex items-center gap-2 px-6 py-2 border-2 cursor-pointer rounded-3xl border-rose-400 bg-gradient-to-r from-[#231436] via-[#061839] to-[#3d1437]"
       onClick={() => {
         setActive("");
         window.scrollTo(0, 0);
@@ -42,13 +42,14 @@ const Navbar = () => {
         <p className="flex text-base font-bold text-white sm:text-sm cursos-pointer">Arnob &nbsp;&nbsp;
         <span className={`${styles.visible} `}> |&nbsp;&nbsp;&nbsp;Personal Portfolio</span></p>
       </Link>
-      <ul className='flex-row hidden gap-10 list-none sm:flex'>
+      <ul className='flex-row hidden list-none sm:flex px-2 py-1 border-2 cursor-pointer rounded-full border-rose-400 bg-[#061839]'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "bg-gradient-to-r border-b-2 border-rose-400 border-dotted from-green-200 via-green-300  bg-clip-text  to-blue-500 text-transparent " : "bg-gradient-to-r from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text"}
-                 hover:text-white text-[18px] font-medium cursor-pointer `}
+                active === nav.title ? "border-2 py-1 border-rose-400 rounded-3xl" :
+                                       "bg-[#231436]  py-2"}
+                 hover:text-white px-4 text-[18px] font-medium cursor-pointer bg-gradient-to-r  from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

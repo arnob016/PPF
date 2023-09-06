@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import RepoInfo from './RepoInfo';
 import LoadingScreen from './LoadingScreen';
+import ProjectCard from './ProjectCard';
 
 export {
   Hero,
@@ -24,5 +25,6 @@ export {
   ThreeObject, 
   StarsCanvas,
   RepoInfo,
-  LoadingScreen
+  LoadingScreen,
+  ProjectCard
 }
