@@ -47,8 +47,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"}
-                 hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "bg-gradient-to-r border-b-2 border-rose-400 border-dotted from-green-200 via-green-300  bg-clip-text  to-blue-500 text-transparent " : "bg-gradient-to-r from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text"}
+                 hover:text-white text-[18px] font-medium cursor-pointer `}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -60,15 +60,15 @@ const Navbar = () => {
           <img src={toggle ? menu : close} alt="menu" className="object-contain cursor-pointer w-7 h-7"
           onClick={() => setToggle(!toggle)}/>
           <div className={`${toggle ? "hidden" : "flex"}
-           p-6 black-gradient absolute rounded-lg top-20 right-0 mx-4 my-2 min-w-[140px] z-10` }>
+           p-6 absolute rounded-lg top-20 right-0 mx-4 my-2 min-w-[140px] z-10` }>
               <ul className='flex flex-col items-start justify-end gap-4 list-none'>
                 {navLinks.map((nav) => (
 
               <li
                 key={nav.id}
                 className={`${
-                active === nav.title ? "text-white" : "text-secondary"}
-                hover:text-white text-[16px] font-poppins font-medium cursor-pointer`}
+                active === nav.title ? "bg-gradient-to-r from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text " : "border-b-4 border-indigo-500  bg-gradient-to-r from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text"}
+                hover:text-white text-[16px] border-2 px-8 py-2 justify-center rounded-md bg-gradient-to-r from-green-200 via-green-300 to-blue-500 font-poppins font-medium cursor-pointer`}
                 onClick={() => {
                   setActive(nav.title)
                   setToggle(!toggle)}
