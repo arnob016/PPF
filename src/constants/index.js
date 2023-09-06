@@ -10,8 +10,6 @@ import {
     css,
     reactjs,
     tailwind,
-    git,
-    figma,
     research,
     bandcoin,
     action,
@@ -84,14 +82,6 @@ import {
     {
       name: "Three JS",
       icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
   ];
   
