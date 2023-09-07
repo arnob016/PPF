@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+import { helpLinks, navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 import RepoInfo from './RepoInfo';
 
@@ -56,6 +56,21 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <ul className='flex-row hidden list-none sm:flex px-2 py-1 border-2 cursor-pointer rounded-full border-rose-400 bg-[#061839]'>
+          {helpLinks.map((nav) => (
+            <li
+              key={nav.id}
+              className={`${
+                active === nav.title ? "border-2 py-1 border-rose-400 rounded-3xl" :
+                                       "bg-[#231436]  py-2"}
+                 hover:text-white px-4 text-[18px] font-medium cursor-pointer bg-gradient-to-r  from-green-200 via-green-300 to-purple-500 text-transparent bg-clip-text`}
+              onClick={() => setActive(nav.title)}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
+        
 
         <div className="flex items-center justify-end flex-1 sm:hidden ">
           <img src={toggle ? menu : close} alt="menu" className="object-contain cursor-pointer w-7 h-7"

@@ -35,6 +35,21 @@ import {
     },
   ];
   
+  export const helpLinks = [
+    {
+      id: "projects",
+      title: "Projects",
+    },
+    {
+      id: "hire",
+      title: "Hire me.",
+    },
+    {
+      id: "contact",
+      title: "Contact",
+    },
+  ];
+
   const services = [
     {
       title: "Web Developer",
