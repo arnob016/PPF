@@ -4,7 +4,7 @@ import React from "react";
 import {motion} from "framer-motion";
 import {fadeIn} from '../variants'
 import { SectionWrapper } from '../hoc';
-import github from "../assets/github.png";
+import { Tilt } from "react-tilt";
 import carrent from "../assets/carrent.png";
 import jobit from "../assets/jobit.png";
 
@@ -29,7 +29,14 @@ const AcademyProjects = () => {
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}>
-            <div className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+            <Tilt
+          options={{
+            max:15,
+            scale:1,
+            speed:400,
+            reverse: true,
+            reset:true
+          }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -40,7 +47,7 @@ const AcademyProjects = () => {
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
               Read Blog Post</a>  
            
-          </div>
+          </Tilt>
           </motion.div>
           </div>
           <motion.div 
@@ -49,7 +56,14 @@ const AcademyProjects = () => {
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}
           className="flex flex-col flex-1 gap-y-10">
-          <div className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+          <Tilt
+          options={{
+            max:15,
+            scale:1,
+            speed:400,
+            reverse: true,
+            reset:true
+          }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -60,9 +74,16 @@ const AcademyProjects = () => {
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
               Read Blog Post</a>  
            
-              </div>
+              </Tilt>
 
-          <div className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+          <Tilt
+          options={{
+            max:15,
+            scale:1,
+            speed:400,
+            reverse: false,
+            reset:true
+          }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -72,7 +93,7 @@ const AcademyProjects = () => {
             </div> 
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
               Read Blog Post</a>        
-          </div>
+          </Tilt>
           </motion.div>
         </div>
       </div>

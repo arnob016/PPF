@@ -26,12 +26,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
+      id: "experience",
+      title: "Experience",
     },
   ];
   
@@ -43,10 +39,6 @@ import {
     {
       id: "hire",
       title: "Hire me.",
-    },
-    {
-      id: "contact",
-      title: "Contact",
     },
   ];
 

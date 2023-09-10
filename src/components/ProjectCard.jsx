@@ -1,11 +1,12 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import {motion} from "framer-motion";
-import {fadeIn} from '../variants'
+import {slider} from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import github from "../assets/github.png";
 import carrent from "../assets/carrent.png";
-import { zoomIn } from "../utils/motion";
+import { Tilt } from "react-tilt";
 
 const ProjectCard = () => {
   return (
@@ -23,11 +24,20 @@ const ProjectCard = () => {
                 <button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-4 ml-2">Hire me!</button>
               </div>
               <motion.div 
-          variants={fadeIn('right',0.3)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{once: false, amount: 0.5}}>
-            <div className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+                variants={slider('right',0.3)}
+                initial="hidden"
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.5}}>
+            <Tilt
+            
+            options={{
+              max:15,
+              scale:1,
+              speed:400,
+              reverse: true,
+              reset:true
+            }}  
+           className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -43,20 +53,28 @@ const ProjectCard = () => {
               <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
                 </img>
                 </a>
-              </div>
+              </Tilt>
             </motion.div>
           </div>
 
           
           <motion.div 
-          variants={fadeIn('left',0.3)}
+          variants={slider('left',0.3)}
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}
           className="flex flex-col flex-1 gap-y-10">
-          <div className="hidden lg:flex lg:p-20"></div>
+          <div className="hidden lg:flex lg:p-[84px]"></div>
           <div className="lg:hidden"></div>
-          <div className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+          <Tilt
+          options={{
+            max:15,
+            scale:1,
+            speed:400,
+            reverse: true,
+            reset:true
+          }} 
+          className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -72,7 +90,7 @@ const ProjectCard = () => {
             <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
               </img>
               </a>
-              </div>
+              </Tilt>
 
           
           </motion.div>

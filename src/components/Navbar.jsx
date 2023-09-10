@@ -39,8 +39,7 @@ const Navbar = () => {
       }}
       >
         <img src={logo} alt="logo" className="object-contain w-9 h-9"/>
-        <p className="flex text-base font-bold text-white sm:text-sm cursos-pointer">Arnob &nbsp;&nbsp;
-        <span className={`${styles.visible} `}> |&nbsp;&nbsp;&nbsp;Personal Portfolio</span></p>
+        <p className="flex text-base font-bold text-white sm:text-sm cursos-pointer">Arnob&nbsp;Dey&nbsp;</p>
       </Link>
       <ul className='flex-row hidden list-none sm:flex px-2 py-1 border-2 cursor-pointer rounded-full border-rose-400 bg-[#061839]'>
           {navLinks.map((nav) => (
