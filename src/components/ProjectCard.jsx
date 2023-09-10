@@ -10,13 +10,13 @@ import { Tilt } from "react-tilt";
 
 const ProjectCard = () => {
   return (
-    <section className="section">
+    <section className="overflow-hidden section ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex flex-col flex-1 lg:mb-0">
             <div>
               <h2 className="px-2 text-3xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-indigo-700 h2"> My projects</h2>
-              <p className="px-2 text-xl mt-7 text-stone-200">
+              <p className="px-2 mt-[18px] text-xl text-stone-200">
                 Here&apos;s what I&apos;ve been working on lately.</p>
               <div className="flex flex-row px-2 pb-2 mt-3 mb-3 text-xl text-stone-200">
                 <p>Are you impressed? &nbsp;</p> <p className="font-bold">Let&apos;s work together 😊</p></div>
@@ -37,7 +37,7 @@ const ProjectCard = () => {
               reverse: true,
               reset:true
             }}  
-           className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+           className="relative ml-4 overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
@@ -64,7 +64,7 @@ const ProjectCard = () => {
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}
           className="flex flex-col flex-1 gap-y-10">
-          <div className="hidden lg:flex lg:p-[84px]"></div>
+          <div className="hidden lg:flex lg:p-20"></div>
           <div className="lg:hidden"></div>
           <Tilt
           options={{
@@ -74,7 +74,7 @@ const ProjectCard = () => {
             reverse: true,
             reset:true
           }} 
-          className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+          className="relative mr-4 overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
