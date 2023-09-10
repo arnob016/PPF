@@ -99,22 +99,18 @@ import {
       icon: bandcoin,
       iconBg: "#383E56",
       date: "July 2023 - Current",
-      points: [
-        "Managing project budgets, resource allocation and negotiations",
-        "Community Management during project period",
-        "Creating UI design and ensuring product delivery",
-        "Providing feedback to developers.",
-      ],
+      points: 
+        "A music and art focused company that aims to embed artists with tech.",
+      
     },
     {
       title: "Junior Developer - Remote ✈️",
       company_name: "Action Tokens,LLC",
       icon: action,
       iconBg: "#E6DEDD",
-      date: "Fenruary 2022  - July 2023",
+      date: "February 2023  - July 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies on Stellar Blockchain",
-        "Creating Blockchain solution and product engineering",
+        "Developing solutions on real-world problems at Stellar Blockchain.",
       ],
     },
     {
@@ -124,10 +120,7 @@ import {
       iconBg: "#E6DEDD",
       date: "August 2022  - February 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing solutions on real-world problems at Stellar Blockchain." 
       ],
     },
     {
@@ -137,14 +130,13 @@ import {
       iconBg: "#F0F0F0",
       date: "September 2021 - March 2022",
       points: [
-        "Community Manager for Asian countries",
-        "Python Scripter, Communication services (social media) manager",
-        "Monitor digital spaces and engaging with users",
-        "Participating in alpha, beta testing and providing feedback to developers.",
+        "Strategically contributing to DeFi and unlocking potential on Blockchain.",
       ],
     },
   ];
   
+
+
   const projects = [
       {
         title: "Band",

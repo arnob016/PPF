@@ -13,7 +13,7 @@ import 'react-vertical-timeline-component/style.min.css';
 const ExperienceCard = ({experience}) => (
     <VerticalTimelineElement
     contentStyle={{ background: 'linear-gradient(to right, rgb(217, 70, 239), rgb(99, 102, 241))', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '16px solid  rgb(251, 113, 133)' }}
+    contentArrowStyle={{ borderRight: '16px solid rgb(217, 70, 239)' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
@@ -26,14 +26,9 @@ const ExperienceCard = ({experience}) => (
         <h3 className='font-extrabold text-zinc-50 text-[20px]'>
           {experience.title}</h3>
         <p className='font-extrabold text-zinc-50' style={{ margin: 0 }}>{experience.company_name}</p>
+        <p className='font-bold text-zinc-50'>{experience.points}</p>
       </div>
       
-        <ul className='mt-5 ml-5 space-y-2 list-disc'>
-          {experience.points.map((point,index) => (
-            <li key={`experinece-point-${index}`} className='text-white text-[17px] pl-1 tracking-wider'>{point}
-            </li>    
-          ))}
-        </ul> 
   </VerticalTimelineElement>
 );
 

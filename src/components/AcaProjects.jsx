@@ -102,4 +102,4 @@ const AcademyProjects = () => {
   );
 };
 
-export default SectionWrapper(AcademyProjects,"projects");
+export default SectionWrapper(AcademyProjects,"AcademyProjects");
