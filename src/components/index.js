@@ -10,6 +10,7 @@ import Contact from './Contact';
 import RepoInfo from './RepoInfo';
 import LoadingScreen from './LoadingScreen';
 import ProjectCard from './ProjectCard';
+import AcademyProjects from './AcaProjects'
 
 export {
   Hero,
@@ -26,5 +27,6 @@ export {
   StarsCanvas,
   RepoInfo,
   LoadingScreen,
-  ProjectCard
+  ProjectCard,
+  AcademyProjects
 }
