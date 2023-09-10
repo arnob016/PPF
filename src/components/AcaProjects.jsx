@@ -14,15 +14,15 @@ const AcademyProjects = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex flex-col flex-1 mb-10 gap-y-12 lg:mb-0">
-          <div className="hidden py-12 lg:block"></div>
+          <div className="hidden py-5 lg:block"></div>
             <div>
               <h2 className="p-2 text-3xl font-extrabold leading-tight text-transparent bg-gradient-to-l from-rose-500 to-indigo-700 bg-clip-text h2">Academic Projects</h2>
               <p className="px-2 pt-2 text-xl font-bold mt-7 text-stone-200">
-                These are projects I completed during my</p>
+                These are projects I completed during my study</p>
               <p className="px-2 pb-2 my-5 text-xl font-bold text-stone-200">
-                study period in Daffodil International University ❤️</p>
+                period during Daffodil International University ❤️</p>
                 
-                <button className="text-white bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-400 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 m-2">View my degree</button>
+                <button className="text-white bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-400 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-[60px] m-2">View my degree</button>
               </div>
               <motion.div 
           variants={fadeIn('right',0.3)}
