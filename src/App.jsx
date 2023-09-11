@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import LoadingScreen from "./components/LoadingScreen";
-import { About, Contact, Experience, AcademyProjects, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ProjectCard } from "./components";
+import { About, Contact, Experience, AcademyProjects, Feedbacks, Hero, Navbar, Tech, StarsCanvas, ProjectCard } from "./components";
 
 
 const App = () => {
@@ -17,12 +17,10 @@ const App = () => {
         <AcademyProjects />
       <Experience />
       <Tech />
-      <Works />
       <Feedbacks />
       </div>
       <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
       </div>
     </div>
   </BrowserRouter>
