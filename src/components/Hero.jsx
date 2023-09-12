@@ -6,7 +6,7 @@ const Hero = () => {
   const heroText = "WELCOME TO MY PORTFOLIO !";
 
   return (
-    <div id="main-wrapper">
+    <div id="hero-wrapper">
     <section className='relative w-full h-screen max-auto'>
       <div className={`absolute inset-0 top-[150px] lg:top-[220px] max-w-full h-auto mx-auto sm:px-16 pl-6 flex flex-row  items-start gap-5`}>
         <div className='flex flex-col items-center justify-center mt-5'>
