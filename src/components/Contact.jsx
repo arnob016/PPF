@@ -70,7 +70,7 @@ const Contact = () => {
 
  
   return (
-    <div className='flex flex-col-reverse gap-4 overflow-hidden lg:flex-row lg:justify-between'>
+    <div className='flex flex-col gap-4 overflow-hidden lg:flex-row lg:justify-between'>
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
         className = "flex-[0.6] bg-black-100 p-8 rounded-2xl">
@@ -129,8 +129,8 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-        variants={slideIn('left', "tween", 0.2, 1)}
-        className = "lg:flex-[0.3] items-center justify-center w-full p-8 bg-black-100 rounded-2xl">
+        variants={slideIn('right', "tween", 0.2, 1)}
+        className = "lg:flex-[0.3] items-center justify-center w-full p-8 bg-opacity-75 bg-black-100 rounded-2xl">
 
         </motion.div>
 
