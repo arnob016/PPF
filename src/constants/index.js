@@ -14,7 +14,7 @@ import {
     bandcoin,
     action,
     script3,
-    carrent,
+    actionverse,
     jobit,
     tripguide,
     threejs,

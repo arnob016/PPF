@@ -24,7 +24,7 @@ import script3 from "./company/script3.png";
 import bandcoin from "./company/bandcoin.png";
 import action from "./company/action.png";
 
-import carrent from "./carrent.png";
+import actionverse from "./actionverse.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -52,7 +52,7 @@ export {
   script3,
   bandcoin,
   action,
-  carrent,
+  actionverse,
   jobit,
   tripguide,
 };

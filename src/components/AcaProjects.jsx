@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {fadeIn} from '../variants'
 import { SectionWrapper } from '../hoc';
 import { Tilt } from "react-tilt";
-import carrent from "../assets/carrent.png";
+import actionverse from "../assets/actionverse.png";
 import jobit from "../assets/jobit.png";
 
 const AcademyProjects = () => {
@@ -21,13 +21,15 @@ const AcademyProjects = () => {
               <span> period during Daffodil International University ❤️</span></p>
               <button className="text-white bg-gradient-to-r from-lime-400 via-lime-500 to-lime-600 hover:bg-gradient-to-br 
               focus:ring-4 focus:outline-none focus:ring-lime-400 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg
-               dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 lg:mb-20 m-4">View my degree</button>
+               dark:shadow-lime-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 lg:-mb-4 xl:mb-20 m-4">View my degree</button>
               </div>
               <motion.div 
           variants={fadeIn('right',0.3)}
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}>
+            
+          <div className="hidden md:flex xl:p-8"></div>
              <Tilt
           options={{
             max:15,
@@ -37,7 +39,7 @@ const AcademyProjects = () => {
             reset:true
           }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-blue-950"></div>
-            <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
              Project title</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
@@ -57,6 +59,7 @@ const AcademyProjects = () => {
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}
           className="flex flex-col flex-1 gap-y-5">
+            
           <Tilt
           options={{
             max:15,
@@ -64,9 +67,9 @@ const AcademyProjects = () => {
             speed:400,
             reverse: true,
             reset:true
-          }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
+          }}  className="relative overflow-hidden border-2 group border-white-100 lg:my-0.5 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-blue-950"></div>
-            <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
               No design</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
@@ -85,7 +88,7 @@ const AcademyProjects = () => {
             reset:true
           }}  className="relative overflow-hidden border-2 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-blue-950"></div>
-            <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
               UI / UX design</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">

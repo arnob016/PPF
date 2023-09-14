@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {slider} from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import github from "../assets/github.png";
-import carrent from "../assets/carrent.png";
+import actionverse from "../assets/actionverse.png";
 import { Tilt } from "react-tilt";
 
 const ProjectCard = () => {
@@ -39,7 +39,7 @@ const ProjectCard = () => {
             }}  
            className="relative overflow-hidden border-2 lg:ml-4 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
-            <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
               UI / UX design</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
@@ -47,9 +47,9 @@ const ProjectCard = () => {
             </div> 
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
               Read Blog Post</a>  
-            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
+            <a className="absolute z-50 hidden px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md md:flex bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
               Visit website</a>
-            <a href="github.com">
+            <a href="github.com" className="hidden md:flex">
               <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
                 </img>
                 </a>
@@ -63,9 +63,10 @@ const ProjectCard = () => {
           initial="hidden"
           whileInView={'show'}
           viewport={{once: false, amount: 0.5}}
-          className="flex flex-col flex-1 gap-y-10">
-          <div className="hidden lg:flex lg:p-20"></div>
+          className="flex flex-col flex-1 gap-y-10"> 
           <div className="lg:hidden"></div>
+          
+          <div className="hidden md:flex xl:p-20 lg:p-[94px]"></div>
           <Tilt
           options={{
             max:15,
@@ -76,7 +77,8 @@ const ProjectCard = () => {
           }} 
           className="relative overflow-hidden border-2 lg:mr-4 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
-            <img src={carrent} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
               UI / UX design</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
@@ -84,9 +86,9 @@ const ProjectCard = () => {
             </div>  
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
               Read Blog Post</a>  
-            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
+            <a className="absolute z-50 hidden px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md md:flex bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
               Visit website</a>
-            <a href="https://github.com">
+            <a href="https://github.com" className="hidden md:flex">
             <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
               </img>
               </a>
