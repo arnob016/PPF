@@ -13,7 +13,7 @@ const Computers = ({ isMobile }) => {
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor='black' />
-      <pointLight intensity={7} />
+      <pointLight intensity={10} position={0,0,0.5}/>
       <primitive
         object={computer.scene}
         position={0, 0, 0.6}
