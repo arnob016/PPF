@@ -70,7 +70,7 @@ const Contact = () => {
 
  
   return (
-    <div className='flex flex-col gap-4 overflow-hidden lg:flex-row lg:justify-between'>
+    <div className='flex flex-col gap-6 overflow-hidden lg:gap-0 lg:flex-row lg:justify-between'>
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
         className = "flex-[0.6] bg-black-100 p-8 rounded-2xl">
@@ -127,15 +127,29 @@ const Contact = () => {
           </form>
 
         </motion.div>
+        <div className='overflow-hidden lg:flex-[0.3] flex items-center'>
+          <motion.div
+          variants={slideIn('right', "tween", 0.2, 1)}
+          className = "items-center justify-center w-full h-auto p-6 bg-black-100 rounded-2xl ">
 
-        <motion.div
-        variants={slideIn('right', "tween", 0.2, 1)}
-        className = "lg:flex-[0.3] items-center justify-center w-full p-8 bg-opacity-75 bg-black-100 rounded-2xl">
+            <div className='flex flex-col items-center gap-4 p-4'>
+              <div className='font-extrabold text-white font'>Did you like my portfolio?</div>
+              <div className='flex flex-row justify-center gap-4 font-extrabold'>
+              <div className='cursor-pointer hover:-translate-x-2 hover:-translate-y-1 hover:scale-150 hover:animate-pulse '>😍</div>
+                <div className='cursor-pointer hover:-translate-x-2 hover:-translate-y-1 hover:scale-150 hover:animate-pulse'>😄</div>
+                <div className='cursor-pointer hover:-translate-x-2 hover:-translate-y-1 hover:scale-150 hover:animate-pulse '>😕</div>
+                <div className='cursor-pointer hover:-translate-x-2 hover:-translate-y-1 hover:scale-150 hover:animate-pulse '>😞</div>
+                <div className='cursor-pointer hover:-translate-x-2 hover:-translate-y-1 hover:scale-150 hover:animate-pulse '>🤢</div>
+              </div>
 
-        </motion.div>
+          <div>
+            <textarea name="textarea" id="comment" cols="30" rows="2" placeholder='Leave a comment.' className='flex justify-center w-full p-2 rounded-lg'></textarea>
+          </div>
+            </div>
+          </motion.div>
+        </div>
 
-    </div>
-    
+      </div>
   )
 }
 
