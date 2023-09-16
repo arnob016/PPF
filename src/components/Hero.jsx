@@ -1,6 +1,11 @@
 import {motion} from 'framer-motion';
 import {styles} from '../styles';
-import { ThreeObject } from './canvas';
+import dynamic from 'next/dynamic'
+ 
+const { ThreeObject } = dynamic(() => import('./canvas'), {
+  loading: () => <p>Loading...</p>,
+})
+
 import HexFect from './HexFect';
 const Hero = () => {
   const heroText = "WELCOME TO MY PORTFOLIO !";
