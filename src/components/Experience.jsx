@@ -36,7 +36,7 @@ const Experience = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-    <h2 className={styles.sectionHeadText}>Professional experience</h2>
+    <h2 className="bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-purple-800 via-rose-200 to-amber-400 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Professional experience</h2>
     <p className={styles.sectionSubText}>Where I have worked before&nbsp;:</p>
     </motion.div>
     

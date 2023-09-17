@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className='flex justify-center'>
       <nav className="fixed z-20 flex w-5/6 py-4 bg-transparent rounded-3xl top-4">
       <div className="flex items-center justify-between w-full ">
-      <Link to="hero-wrapper" activeClass="active" spy={true} smooth={true}
+      <Link to="#" activeClass="active" spy={true} smooth={true}
       className="flex items-center gap-2 px-6 py-2 border-2 cursor-pointer rounded-3xl border-rose-400 bg-gradient-to-r from-[#231436] via-[#061839] to-[#3d1437]"
       onClick={() => {
         setActive("");
