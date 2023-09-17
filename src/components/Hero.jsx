@@ -26,20 +26,17 @@ const Hero = () => {
           <div className='md:20 xl:20 lg:h-20'></div>
         </div>
  
-      
-      <div className={`ml-4 w-full pl-4 px-4 overflow-hidden ${styles.visible}`}>
+       
+      <div className={`mt-20 lg:mt-0 px-10 ml-4 w-full pl-4 lg:px-4 overflow-hidden lg:flex`}>
         <ThreeObject/>
         </div>
 
-      <div className={`ml-4 mt-20 w-full pl-4 px-10 overflow-hidden ${styles.invisible}`}>
-        <ThreeObject/>
-        </div>
         
   </div>
  
   </div>
 
-<div className='absolute flex items-center justify-center w-full xs:bottom-10 bottom-32'>
+<div className='absolute items-center justify-center hidden w-full xs:bottom-10 bottom-32 md:flex'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
