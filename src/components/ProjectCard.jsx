@@ -6,6 +6,7 @@ import {slider} from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import github from "../assets/github.png";
 import actionverse from "../assets/actionverse.png";
+import bdc from "../assets/bdc.png";
 import { Tilt } from "react-tilt";
 
 const ProjectCard = () => {
@@ -40,17 +41,18 @@ const ProjectCard = () => {
            className="relative overflow-hidden border-2 lg:ml-4 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
             <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
-            <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
-              UI / UX design</div>
-            <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
-              Project Name
+            <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-40">
+              Project Manager and UI/UX Designer</div>
+            <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-32">
+              ActionVerse </div>
+            <div className="absolute z-50 hidden font-extrabold text-transparent transition-all duration-1000 md:flex bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-20"> Actionverse consists of multiple websites such as Collection, Arts, Gallery, AWC etc.
             </div> 
-            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
-              Read Blog Post</a>  
-            <a className="absolute z-50 hidden px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md md:flex bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
+            <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 md:hidden bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-20"> Blockchain Project.
+            </div>
+            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="https://www.map.action-tokens.com/">
               Visit website</a>
-            <a href="github.com" className="hidden md:flex">
-              <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
+            <a href="https://github.com/actionaac" className="hidden md:flex">
+              <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-48 group-hover:bottom-4" href="https://github.com/actionaac">
                 </img>
                 </a>
               </Tilt>
@@ -77,18 +79,18 @@ const ProjectCard = () => {
           }} 
           className="relative overflow-hidden border-2 lg:mr-4 group border-white-100 rounded-xl">
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-black-100"></div>
-            <img src={actionverse} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
+            <img src={bdc} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
 
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
-              UI / UX design</div>
+              Project manager & UI/UX design</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
-              Project Name
+              Bandcoin
             </div>  
-            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="#">
+            <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="https://bandcoin.io/">
               Read Blog Post</a>  
-            <a className="absolute z-50 hidden px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md md:flex bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="#">
+            <a className="absolute z-50 hidden px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md md:flex bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-48 group-hover:bottom-6" href="https://bandcoin.io/">
               Visit website</a>
-            <a href="https://github.com" className="hidden md:flex">
+            <a href="https://github.com/Bandcoin2023/Bandcoin" className="hidden md:flex">
             <img src={github} alt="github" className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md max-h-[50px] -bottom-full left-80 group-hover:bottom-4" href="#">
               </img>
               </a>
