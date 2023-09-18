@@ -10,6 +10,7 @@ import RepoInfo from './RepoInfo';
 import LoadingScreen from './LoadingScreen';
 import ProjectCard from './ProjectCard';
 import AcademyProjects from './AcaProjects'
+import LazyThreeObject from './LazyThreeObject';
 
 export {
   Hero,
@@ -26,5 +27,6 @@ export {
   RepoInfo,
   LoadingScreen,
   ProjectCard,
-  AcademyProjects
+  AcademyProjects,
+  LazyThreeObject
 }

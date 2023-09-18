@@ -2,6 +2,7 @@ import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import { ThreeObject } from './canvas';
 import HexFect from './HexFect';
+import LazyThreeObject from './LazyThreeObject';
 const Hero = () => {
   const heroText = "WELCOME TO MY PORTFOLIO !";
 
@@ -28,7 +29,7 @@ const Hero = () => {
  
        
       <div className={`mt-20 lg:mt-0 px-10 ml-4 w-full pl-4 lg:px-4 overflow-hidden lg:flex`}>
-        <ThreeObject/>
+        <LazyThreeObject/>
         </div>
 
         
