@@ -36,4 +36,4 @@ const GisMent = () => {
   )
 }
 
-export default SectionWrapper(GisMent, "comment");
+export default SectionWrapper(GisMent, "GisMent");
