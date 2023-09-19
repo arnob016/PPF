@@ -46,8 +46,8 @@ const Navbar = () => {
              <li
              key={nav.id}
              className={`${
-             active === nav.title ? "-skew-y-2 border-2 p-2 rounded-2xl scale-125 bg-clip-border bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]" : ""}
-             hover:text-white text-[16px] my-2 py-1 rounded-md font-poppins font-medium cursor-pointer px-6`}
+             active === nav.title ? "border-2 scale-110 bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]" : "text-wheat-100"}
+             hover:text-white hover:-translate-y-1 text-[16px] my-2 py-1 rounded-3xl font-poppins font-medium cursor-pointer px-6`}
              onClick={() => setActive(nav.title)}>
              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -58,14 +58,14 @@ const Navbar = () => {
           <img src={toggle ? menu : close} alt="menu" className="object-contain cursor-pointer w-7 h-7"
           onClick={() => setToggle(!toggle)}/>
           <div className={`${toggle ? "hidden" : "flex"}
-           py-4 px-10 absolute justify-end rounded-xl top-20  mx-4 min-w-[140px] z-10 bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]` }>
+           py-4 px-10 absolute justify-end rounded-xl top-20 mx-4 min-w-[140px] z-10 bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]` }>
               <ul className='flex flex-col items-end w-full list-none gap-y-4'>
                 {navLinks.map((nav) => (
 
               <li
                 key={nav.id}
                 className={`${
-                active === nav.title ? "-skew-y-2 border-2 p-2 rounded-2xl bg-clip-border bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]" : ""}
+                active === nav.title ? "border-2 p-2 rounded-2xl bg-clip-border bg-gradient-to-b from-[#231436] via-[#061839] to-[#3d1437]" : ""}
                 hover:text-white items-end justify-end  text-[16px] py-2 rounded-md font-poppins font-medium cursor-pointer`}
                 onClick={() => {
                   setActive(nav.title)
