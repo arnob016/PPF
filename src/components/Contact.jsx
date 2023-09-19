@@ -33,6 +33,13 @@ const Contact = () => {
  
  const handleSubmit = (e) => {
   e.preventDefault();
+
+  // Check if any field is empty
+  if (!form.name || !form.email || !form.message) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
   setLoading(true);
 
   emailjs
