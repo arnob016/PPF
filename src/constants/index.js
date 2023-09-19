@@ -15,8 +15,6 @@ import {
     action,
     script3,
     actionverse,
-    jobit,
-    tripguide,
     threejs,
   } from "../assets";
   

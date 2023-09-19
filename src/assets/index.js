@@ -18,15 +18,11 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
 import meta from "./company/meta.png";
 import script3 from "./company/script3.png";
 import bandcoin from "./company/bandcoin.png";
 import action from "./company/action.png";
-
 import actionverse from "./actionverse.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   loadbg,
@@ -52,7 +48,5 @@ export {
   script3,
   bandcoin,
   action,
-  actionverse,
-  jobit,
-  tripguide,
-};
+  actionverse
+}
