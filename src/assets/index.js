@@ -8,7 +8,6 @@ import github from "./github.png";
 import research from "./research.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
