@@ -11,6 +11,7 @@ import LoadingScreen from './LoadingScreen';
 import ProjectCard from './ProjectCard';
 import AcademyProjects from './AcaProjects'
 import LazyThreeObject from './LazyThreeObject';
+import GisMent from './GisMent';
 
 export {
   Hero,
@@ -28,5 +29,6 @@ export {
   LoadingScreen,
   ProjectCard,
   AcademyProjects,
-  LazyThreeObject
+  LazyThreeObject,
+  GisMent
 }

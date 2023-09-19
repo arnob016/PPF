@@ -8,6 +8,7 @@ import Giscus from '@giscus/react';
 import {motion} from "framer-motion";
 import {styles} from '../styles'
 import { slideIn } from '../utils/motion';
+import { SocialIcon } from 'react-social-icons'
 
 //template_qgyhcxi
 //service_6j0rrc1
@@ -134,33 +135,35 @@ const Contact = () => {
           </form>
 
         </motion.div>
-        <div className='overflow-hidden lg:flex-[0.45] flex items-center'>
-          <motion.div
+        <div className='overflow-hidden lg:flex-[0.45] flex-col justify-center gap-10 flex items-center h-auto'>
+        <motion.div
           variants={slideIn('right', "tween", 0.2, 1)}
           className = "items-center justify-center w-full h-auto p-6 bg-black-100 rounded-2xl ">
 
             <div className='flex flex-col items-center gap-4 p-4'>
-              <div className='font-extrabold text-white font'>Did you like my portfolio?</div>
-              <div className='font-extrabold text-white font'>Leave a comment and reaction </div>
+            <div className='font-extrabold text-white underline font underline-offset-4'>You can find me here as well</div>
+            <div className='flex flex-row gap-2'>
+            
+              <SocialIcon network="github" url="https://github.com/arnob016/"   target="blank" className='border-2 border-transparent rounded-full bg-clip-border bg-gradient-to-b from-sky-400 to-sky-200'/>
+              <SocialIcon network="discord" url="https://discord.gg/ZYKp9WeSW2"  target="blank"  className='border-2 border-transparent rounded-full bg-clip-border bg-gradient-to-r from-violet-300 to-violet-400'/>
+              <SocialIcon network="twitter" url="https://twitter.com/arnob_016"  target="blank"  className='border-2 border-transparent rounded-full bg-clip-border bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900'/>
+              <SocialIcon network="reddit" url="https://www.reddit.com/user/Arnob_D_Noob"  target="blank"  className='border-2 border-transparent rounded-full bg-clip-border bg-gradient-to-l from-rose-900 via-amber-800 to-rose-400'/>
+              <SocialIcon network="facebook" url="https://www.facebook.com/m.arnob.016/"  target="blank" className='border-2 border-transparent rounded-full bg-clip-border bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-200 to-yellow-200'/>
 
-          <div className='w-full max-w-5xl'>
-          <Giscus
-      id="comments"
-      repo="arnob016/PPF"
-      repoId="R_kgDOKLcLmg"
-      category="General"
-      categoryId="DIC_kwDOKLcLms4CZbVb"
-      mapping="pathname"
-      term="Welcome to @giscus/react component!"
-      reactionsEnabled="1"
-      emitMetadata="0"
-      inputPosition="top"
-      theme="purple_dark"
-      lang="en"
-      loading="lazy"
-    />
-          </div>
             </div>
+            
+            </div>
+          </motion.div>
+          
+          <motion.div
+          variants={slideIn('right', "tween", 0.2, 1)}
+          className = "items-center justify-center hidden w-full h-auto p-6 md:flex bg-black-100 rounded-2xl ">
+
+            <div className='flex flex-col items-center gap-4 p-4'>
+              <div className='font-extrabold text-white font'>Did you like my portfolio?</div>
+              <div className='font-extrabold text-white font'>Leave a react and comment below</div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlSpace="preserve" className='w-20 p-4 animate-bounce'><path fill="#6E83B7" d="m256 502 150-200h-80V146H186v156h-80zM186 78h140v40H186zM186 10h140v40H186z"/></svg>
+              </div>
           </motion.div>
         </div>
 
