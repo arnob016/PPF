@@ -11,9 +11,11 @@ const GisMent = () => {
     <div className='flex items-center overflow-hidden'>
       <motion.div
         variants={slideIn('right', "tween", 0.2, 1)}
-        className = "items-center justify-center w-full h-auto p-6 bg-black-100 rounded-xl ">
-        <div className='flex flex-col items-center gap-4 p-4'>
+        className = "items-center justify-center w-full h-auto bg-black-100 hover:bg-purple-900 rounded-xl ">
+        <div className='flex flex-col items-center gap-4 p-4 font-bold'>
           <div className='w-full max-w-5xl'>
+          <div className='flex justify-center w-full mt-4 md:hidden'>Did you like my portfolio? Leave a comment below</div>
+      
             <Giscus
               id="comments"
               repo="arnob016/PPF"

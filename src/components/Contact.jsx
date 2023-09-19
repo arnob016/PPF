@@ -121,14 +121,14 @@ const Contact = () => {
                 placeholder='Leave me a message.'
                 className='px-6 py-3 -mb-2 font-medium border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'/>
             </label>
-            <button
-            type='submit'
-            className='px-8 py-3 font-bold text-white shadow-md outline-none bg-tertiary w-fit shadow-primary rounded-xl'>
-
-
-              {loading ? 'Sending...':'Send'}
-              
-            </button>
+            <div className='flex flex-row items-center gap-4'>
+              <button
+              type='submit'
+              className='px-8 py-3 font-bold text-white shadow-md outline-none hover:-translate-y-1 bg-tertiary w-fit shadow-primary rounded-xl'>
+                {loading ? 'Sending...':'Send'}
+              </button>
+              <a href='#GisMent' className='px-8 py-3 font-me\ text-white shadow-md outline-none hover:-translate-y-1 bg-tertiary w-fit shadow-primary rounded-xl md:hidden'><h1>Or, Leave a comment below!</h1></a>
+            </div>
             
 
 
@@ -162,7 +162,8 @@ const Contact = () => {
             <div className='flex flex-col items-center gap-4 p-4'>
               <div className='font-extrabold text-white font'>Did you like my portfolio?</div>
               <div className='font-extrabold text-white font'>Leave a react and comment below</div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlSpace="preserve" className='w-20 p-4 animate-bounce'><path fill="#6E83B7" d="m256 502 150-200h-80V146H186v156h-80zM186 78h140v40H186zM186 10h140v40H186z"/></svg>
+              <a href="#GisMent"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlSpace="preserve" className='w-20 p-4 animate-bounce'><path fill="#6E83B7" d="m256 502 150-200h-80V146H186v156h-80zM186 78h140v40H186zM186 10h140v40H186z"/></svg>
+              </a>
               </div>
           </motion.div>
         </div>
