@@ -93,7 +93,7 @@ import {
       company_name: "BandCoin",
       icon: bandcoin,
       iconBg: "#383E56",
-      date: "July 2023 - Current",
+      date: "August 2023 - Current",
       points: 
         "A music and art focused company that aims to embed artists with tech.",
       
@@ -103,7 +103,7 @@ import {
       company_name: "Action Tokens,LLC",
       icon: action,
       iconBg: "#E6DEDD",
-      date: "February 2023  - July 2023",
+      date: "October 2022  - August 2023",
       points: [
         "Developing solutions on real-world problems at Stellar Blockchain.",
       ],
@@ -113,7 +113,7 @@ import {
       company_name: "Action Tokens,LLC",
       icon: action,
       iconBg: "#E6DEDD",
-      date: "August 2022  - February 2023",
+      date: "June 2022  - October 2022",
       points: [
         "Developing solutions on real-world problems at Stellar Blockchain." 
       ],
@@ -123,7 +123,7 @@ import {
       company_name: "Script3 (YeildbLox)",
       icon: script3,
       iconBg: "#F0F0F0",
-      date: "September 2021 - March 2022",
+      date: "September 2021 - December 2022",
       points: [
         "Strategically contributing to DeFi and unlocking potential on Blockchain.",
       ],
@@ -145,27 +145,11 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "",
+      name: "",
+      designation: "",
+      company: "",
+      image: "",
     },
   ];
   
