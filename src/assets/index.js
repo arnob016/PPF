@@ -22,14 +22,20 @@ import script3 from "./company/script3.png";
 import bandcoin from "./company/bandcoin.png";
 import action from "./company/action.png";
 import actionverse from "./actionverse.png";
+import jira from "./tech/jira.png";
+import spline from "./tech/spline.png";
+import stellar from "./stellar.png";
 
 export {
   loadbg,
   logo,
   backend,
+  spline,
   blockchain,
   mobile,
   web,
+  stellar,
+  jira,
   research,
   github,
   menu,

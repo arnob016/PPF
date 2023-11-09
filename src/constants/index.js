@@ -4,7 +4,9 @@ import {
     backend,
     blockchain,
     web,
+    figma,
     javascript,
+    jira,
     typescript,
     html,
     css,
@@ -16,6 +18,8 @@ import {
     script3,
     actionverse,
     threejs,
+    spline,
+    stellar,
   } from "../assets";
   
   export const navLinks = [
@@ -39,19 +43,19 @@ import {
 
   const services = [
     {
-      title: "Web Developer",
+      title: "Project Management (IT)",
       icon: web,
     },
     {
-      title: "Backend Developer",
+      title: "UI Designer",
       icon: backend,
     },
     {
-      title: "Researcher",
+      title: "Community Management",
       icon: research,
     },
     {
-      title: "Blockchain Developer",
+      title: "Technical Writing",
       icon: blockchain,
     },
   ];
@@ -66,20 +70,20 @@ import {
       icon: css,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
+      name: "Figma",
+      icon: figma,
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "Jira",
+      icon: jira,
+    },
+    {
+      name: "Spline 3D",
+      icon: spline,
     },
     {
       name: "Three JS",
@@ -89,34 +93,52 @@ import {
   
   const experiences = [
     {
-      title: "Project Manager & DevOps Manager - Remote ✈️",
+      title: "Project Manager - Remote ✈️",
       company_name: "BandCoin",
       icon: bandcoin,
       iconBg: "#383E56",
       date: "August 2023 - Current",
-      points: 
-        "A music and art focused company that aims to embed artists with tech.",
-      
+      points: [
+      "Responsible for recruting web developers, 3D artists, video creators.",
+      "Responsible for handling music creation, upload, management related projects.",
+      "Responsible to communicate as a middleman between client and employees"
+      ].join(';' + ' ' + ' '),
     },
     {
-      title: "Junior Developer - Remote ✈️",
+      title: "IT Project Manager - Remote ✈️",
       company_name: "Action Tokens,LLC",
       icon: action,
       iconBg: "#E6DEDD",
       date: "October 2022  - August 2023",
       points: [
-        "Developing solutions on real-world problems at Stellar Blockchain.",
-      ],
+        "Responsible for hiring and recruiting software developers",
+        "Responsible for building websites, making related reports and payment",
+        "Acting as a middleman between anonomyous client and dev"
+      ].join(';' + ' ' + ' '),
     },
     {
-      title: "Intern (Developer) - Remote ✈️",
+      title: "Intern (Community Manager) - Remote ✈️",
       company_name: "Action Tokens,LLC",
       icon: action,
       iconBg: "#E6DEDD",
       date: "June 2022  - October 2022",
       points: [
-        "Developing solutions on real-world problems at Stellar Blockchain." 
-      ],
+        "Responsible for managing communities related to Action Token and its sub-brands",
+        "Managing, updating commnities on  new products, creating artifical hype/scarcity",
+      ].join(';' + ' ' + ' '),
+    },
+    {
+      title: "Project Manager - JPEG DAO Workshop",
+      company_name: "Stellar Blockchain & The JPEG DAO community",
+      icon: stellar,
+      iconBg: "#F0F0F0",
+      date: "January 2022 - March 2022",
+      points: [
+        "Responsible for creating the first ever NFT workshop on Stellar",
+        "Responsible for submitting an NFT grant towards artist and tutors in the Stellar Blockchain",
+        "Recruting devs and tutors to participate on podcast",
+        "Managing all requirements and payments to artist, tutors and participants related the project",
+      ].join(';' + ' ' + ' '),
     },
     {
       title: "APAC (Asia Pacific) Community Manager - Remote ✈️",
@@ -125,8 +147,9 @@ import {
       iconBg: "#F0F0F0",
       date: "September 2021 - December 2022",
       points: [
-        "Strategically contributing to DeFi and unlocking potential on Blockchain.",
-      ],
+        "Responsible for managing community server and social medias",
+        "Handeling 1 month long DeFi bug bounty hunt for 3000 participants",
+      ].join(';' + ' ' + ' '),
     },
   ];
   

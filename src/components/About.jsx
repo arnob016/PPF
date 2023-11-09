@@ -53,7 +53,7 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-[17px] max-w-3xl leading-[30px] bg-clip-text font-bold '
         >
-          I&apos;m a software developer with years of experience in project management, blockchain technology. I&apos;ve also gained experience in programming, problem solving, marketing, and scripting. I&apos;m highly skilled in communications, digital storytelling, and UI designing as well.
+          I&apos;m a Computer Science student with 1 year of experience in project management and blockchain technology (Stellar). I&apos;ve also gained experience in programming, problem solving, marketing, and scripting during my academic period in Daffodil International University. I&apos;m skilled in community management and UI designing as well.
         </motion.p>
       </div>
       <motion.div variants={textVariant()} className='-mt-2'>

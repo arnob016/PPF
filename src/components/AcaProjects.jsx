@@ -74,12 +74,12 @@ const AcademyProjects = () => {
             <div className="absolute z-40 w-full h-full transition-all duration-300 opacity-70 group-hover:bg-blue-950"></div>
             <img src={blklnc} alt="Project Pic" className="transition-all duration-500 group-hover:scale-125 " />
             <div className="absolute z-50 font-bold text-transparent transition-all duration-700 bg-gradient-to-r from-indigo-300 to-purple-400 bg-clip-text -bottom-full left-12 group-hover:bottom-24">
-              Frontend Developer</div>
+              Web Engineerin Project</div>
             <div className="absolute z-50 font-extrabold text-transparent transition-all duration-1000 bg-gradient-to-r from-purple-400 to-yellow-400 bg-clip-text -bottom-full left-12 group-hover:bottom-16">
               Blocklancer
             </div> 
             <a className="absolute z-50 px-2 font-extrabold transition-all duration-1000 border-2 border-transparent rounded-md bg-gradient-to-r from-purple-400 to-yellow-400 -bottom-full left-12 group-hover:bottom-6" href="https://github.com/SpeedOut-Source/BlockLancer/blob/main/README.md">
-              Read Blog Post</a>  
+              Check it out!</a>  
           </Tilt>
 
           <Tilt
