@@ -2,7 +2,12 @@ import {motion} from 'framer-motion';
 import {slider} from "../utils/motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import {styles} from '../styles';
-import { ThreeObject } from './canvas';
+import dynamic from 'next/dynamic'
+ 
+const { ThreeObject } = dynamic(() => import('./canvas'), {
+  loading: () => <p>Loading...</p>,
+})
+
 import HexFect from './HexFect';
 import LazyThreeObject from './LazyThreeObject';
 
